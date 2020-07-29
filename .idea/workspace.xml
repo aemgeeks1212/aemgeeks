@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e5704d9a-e1e8-4ed4-b0a2-660212e8fce2" name="Default Changelist" comment="Creating Repository.">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aemgeeks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/all/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/all/src/main/content/META-INF/vault/definition/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/all/src/main/content/META-INF/vault/filter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/aem/geeks/core/filters/LoggingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/aem/geeks/core/filters/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/aem/geeks/core/listeners/SimpleResourceListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/aem/geeks/core/listeners/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/aem/geeks/core/models/HelloWorldModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/aem/geeks/core/models/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/aem/geeks/core/schedulers/SimpleScheduledTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/aem/geeks/core/schedulers/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/aem/geeks/core/servlets/SimpleServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/aem/geeks/core/servlets/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/com/aem/geeks/core/filters/LoggingFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/com/aem/geeks/core/listeners/SimpleResourceListenerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/com/aem/geeks/core/models/HelloWorldModelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/com/aem/geeks/core/schedulers/SimpleScheduledTaskTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/com/aem/geeks/core/servlets/SimpleServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it.launcher/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it.launcher/src/main/java/com/aem/geeks/it/launcher/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it.launcher/src/test/java/com/aem/geeks/it/launcher/SlingServerSideTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it.launcher/src/test/java/com/aem/geeks/it/launcher/SlingServerSideTestsBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it.tests/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it.tests/src/main/java/com/aem/geeks/it/tests/HelloWorldModelServerSideTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it.tests/src/main/java/com/aem/geeks/it/tests/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps.structure/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/META-INF/vault/filter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-base/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-base/css.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-base/js.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-dependencies/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-dependencies/css.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-dependencies/js.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-grid/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-grid/css.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-grid/less/grid.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-site/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-site/css.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/clientlibs/clientlib-site/js.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/accordion/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/accordion/_cq_editConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/accordion/_cq_template/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/breadcrumb/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/button/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/carousel/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/carousel/_cq_editConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/container/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/contentfragment/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/contentfragment/_cq_editConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/contentfragmentlist/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/download/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/embed/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/experiencefragment/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/experiencefragment/_cq_editConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/form/button/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/form/container/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/form/container/new/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/form/hidden/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/form/options/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/form/text/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/footer/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/footer/_cq_dialog/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/footer/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/navigation/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/navigation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/navigation/_cq_design_dialog/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/navigation/_cq_dialog/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/navigation/navigation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/topbar/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/topbar/_cq_dialog/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/global/topbar/topbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/helloworld/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/helloworld/_cq_dialog/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/helloworld/helloworld.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/image/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/image/_cq_editConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/languagenavigation/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/list/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/list/_cq_editConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/navigation/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/page/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/page/customfooterlibs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/page/customheaderlibs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/search/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/separator/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/sharing/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/spa/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/content/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/content/body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/content/content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/content/customfooterlibs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/content/customheaderlibs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/content/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/content/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/home/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/home/body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/home/customfooterlibs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/home/customheaderlibs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/home/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/home/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/home/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/page/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/page/body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/page/customfooterlibs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/page/customheaderlibs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/page/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/page/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/structure/page/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/tabs/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/tabs/_cq_editConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/tabs/_cq_template/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/teaser/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/text/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/title/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/xfpage/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/xfpage/content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/xfpage/customfooterlibs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/components/xfpage/customheaderlibs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/config.author/com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-aemgeeks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/config.prod/org.apache.sling.commons.log.LogManager.factory.config-aemgeeks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/config.stage/org.apache.sling.commons.log.LogManager.factory.config-aemgeeks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/config/org.apache.sling.commons.log.LogManager.factory.config-aemgeeks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/i18n/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/i18n/fr.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/i18n/fr.json.dir/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/templates/page-content/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/templates/page-home/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/templates/report-home/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/tests/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/tests/SampleTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.apps/src/main/content/jcr_root/apps/aemgeeks/tests/js.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/META-INF/vault/filter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/policies/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/policies/_rep_policy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/segments/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/segments/summer/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/segments/winter/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/_rep_policy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/page/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/page/initial/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/page/policies/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/page/structure/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/page/thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/page/thumbnail.png.dir/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/page/thumbnail.png.dir/_jcr_content/_dam_thumbnails/_dam_thumbnail_300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/page/thumbnail.png.dir/_jcr_content/_dam_thumbnails/_dam_thumbnail_319.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/page/thumbnail.png.dir/_jcr_content/_dam_thumbnails/_dam_thumbnail_48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/xf/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/xf/initial/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/xf/policies/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/xf/structure/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/template-types/xf/thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/_rep_policy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/page-content/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/page-content/initial/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/page-content/policies/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/page-content/structure/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/page-content/thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/page-content/thumbnail.png.dir/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/page-content/thumbnail.png.dir/_jcr_content/_dam_thumbnails/_dam_thumbnail_300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/page-content/thumbnail.png.dir/_jcr_content/_dam_thumbnails/_dam_thumbnail_319.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/page-content/thumbnail.png.dir/_jcr_content/_dam_thumbnails/_dam_thumbnail_48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/xf-web-variation/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/xf-web-variation/initial/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/xf-web-variation/policies/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/xf-web-variation/structure/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/xf-web-variation/thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/xf-web-variation/thumbnail.png.dir/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/xf-web-variation/thumbnail.png.dir/_jcr_content/_dam_thumbnails/_dam_thumbnail_128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/conf/aemgeeks/settings/wcm/templates/xf-web-variation/thumbnail.png.dir/_jcr_content/_dam_thumbnails/_dam_thumbnail_319.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/aemgeeks/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/aemgeeks/_jcr_content/image/file" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/aemgeeks/_jcr_content/image/file.dir/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/aemgeeks/_jcr_content/image/file.dir/_jcr_content/_dam_thumbnails/_dam_thumbnail_48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/aemgeeks/_jcr_content/image/file.dir/_jcr_content/_dam_thumbnails/_dam_thumbnail_480.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/aemgeeks/us/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/aemgeeks/us/en/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/aemgeeks/us/en/test/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/aemgeeks/us/en/test/home-page/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/dam/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/dam/aemgeeks/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/dam/aemgeeks/_jcr_content/folderThumbnail" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/dam/aemgeeks/asset.jpg/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/dam/aemgeeks/asset.jpg/_jcr_content/renditions/cq5dam.thumbnail.140.100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/dam/aemgeeks/asset.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/dam/aemgeeks/asset.jpg/_jcr_content/renditions/cq5dam.thumbnail.48.48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/dam/aemgeeks/asset.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/dam/aemgeeks/asset.jpg/_jcr_content/renditions/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/dam/aemgeeks/asset.jpg/_jcr_content/renditions/original.dir/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/experience-fragments/aemgeeks/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/experience-fragments/aemgeeks/us/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/experience-fragments/aemgeeks/us/en/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/experience-fragments/aemgeeks/us/en/site/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/experience-fragments/aemgeeks/us/en/site/footer/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/experience-fragments/aemgeeks/us/en/site/footer/master/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/experience-fragments/aemgeeks/us/en/site/header/.content.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui.content/src/main/content/jcr_root/content/experience-fragments/aemgeeks/us/en/site/header/master/.content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="107" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="aemgeeks" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fM4WbS3FcToaUszvfbGGR2tqlj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RunManager" selected="JUnit.HelloWorldModelTest.testGetMessage">
+    <configuration name="All in aemgeeks.core" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aemgeeks.core" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorldModelTest.testGetMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aemgeeks.core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aem.geeks.core.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aem.geeks.core.models" />
+      <option name="MAIN_CLASS_NAME" value="com.aem.geeks.core.models.HelloWorldModelTest" />
+      <option name="METHOD_NAME" value="testGetMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HelloWorldModelTest.testGetMessage" />
+        <item itemvalue="JUnit.All in aemgeeks.core" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5704d9a-e1e8-4ed4-b0a2-660212e8fce2" name="Default Changelist" comment="" />
+      <created>1596014659788</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596014659788</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Creating Repository.">
+      <created>1596043090933</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596043090933</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Creating Repository." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating Repository." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="460" y="245" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596016653610">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="460" y="245" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.824@0.23.1440.824" timestamp="1596016653610" />
+    <state x="486" y="281" key="#com.intellij.tools.ToolEditorDialog" timestamp="1596015345508">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="486" y="281" key="#com.intellij.tools.ToolEditorDialog/0.23.1440.824@0.23.1440.824" timestamp="1596015345508" />
+    <state x="479" y="291" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596045858384">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="479" y="291" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.824@0.23.1440.824" timestamp="1596045858384" />
+    <state x="90" y="37" width="1217" height="795" key="CommitChangelistDialog2" timestamp="1596045475956">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="90" y="37" width="1217" height="795" key="CommitChangelistDialog2/0.23.1440.824@0.23.1440.824" timestamp="1596045475956" />
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom" timestamp="1596045292948">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.824@0.23.1440.824" timestamp="1596045292948" />
+    <state width="1398" height="209" key="GridCell.Tab.0.center" timestamp="1596045292947">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.824@0.23.1440.824" timestamp="1596045292947" />
+    <state width="1398" height="209" key="GridCell.Tab.0.left" timestamp="1596045292947">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.824@0.23.1440.824" timestamp="1596045292947" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right" timestamp="1596045292948">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.824@0.23.1440.824" timestamp="1596045292948" />
+    <state x="229" y="74" key="SettingsEditor" timestamp="1596042787219">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="229" y="74" key="SettingsEditor/0.23.1440.824@0.23.1440.824" timestamp="1596042787219" />
+    <state x="320" y="163" key="Vcs.Push.Dialog.v2" timestamp="1596043160999">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.23.1440.824@0.23.1440.824" timestamp="1596043160999" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/aemgeeks$All_in_aemgeeks_core.ic" NAME="All in aemgeeks.core Coverage Results" MODIFIED="1596016320672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
