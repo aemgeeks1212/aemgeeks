@@ -56,35 +56,16 @@
                             <groupId>com.aem.geeks</groupId>
                             <artifactId>aemgeeks.ui.apps</artifactId>
                             <type>zip</type>
+                            <filter>true</filter>
                             <target>/apps/aemgeeks-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.aem.geeks</groupId>
                             <artifactId>aemgeeks.ui.content</artifactId>
                             <type>zip</type>
+                            <filter>true</filter>
                             <target>/apps/aemgeeks-packages/content/install</target>
                         </embedded>
-                        
-                        <!--<embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.content</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aemgeeks-vendor-packages/application/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aemgeeks-vendor-packages/application/install</target>
-                        </embedded>
-                        <embedded>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.examples</artifactId>
-                            <type>zip</type>
-                            <target>/apps/aemgeeks-vendor-packages/content/install</target>
-                        </embedded>-->
-                        
-                        
                         
                     </embeddeds>
                     <subPackages>
@@ -200,23 +181,6 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
-
-
-        <!--<dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.content</artifactId>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.config</artifactId>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.examples</artifactId>
-            <type>zip</type>
-        </dependency>-->
         
         <dependency>
             <groupId>com.adobe.acs</groupId>

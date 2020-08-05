@@ -79,5 +79,6 @@
             </container>
         </root>
     </jcr:content>
-    <test/>
+    <home/>
+    <component-info/>
 </jcr:root>

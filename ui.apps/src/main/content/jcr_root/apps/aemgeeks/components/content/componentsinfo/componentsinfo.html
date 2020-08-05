@@ -1,0 +1,66 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+  
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+  
+        http://www.apache.org/licenses/LICENSE-2.0
+  
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+
+<p data-sly-test="${properties.title}">Text property: ${properties.title}</p>
+
+<div data-sly-use.conponentinfo="com.aem.geeks.core.models.ComponentInfo"></div>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Component</th>
+                      <th>Group</th>
+                      <th>Name</th>
+                      <th>Path</th>
+                      <th>Pages</th>
+
+
+                    </tr>
+                  </thead>
+                 <!--  <tfoot>
+                    <tr>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                      <th>Start date</th>
+                      <th>Salary</th>
+                    </tr>
+                  </tfoot>-->
+                  <tbody>
+                  
+                  <div data-sly-list.item="${conponentinfo.components}">
+                    <tr>
+                      <td>${item.title}</td>
+                      <td>${item.group}</td>
+                      <td>${item.name}</td>
+                      <td>${item.path}</td>
+                      <td><input type="button" class="btn btn-info" onclick="location.href='${'/content/reports/home/test-request.html?component=' @ context='scriptString'}${item.path @ context='scriptString'}'" value="${item.pages}"></td>
+
+                    </tr>
+                  </div>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>

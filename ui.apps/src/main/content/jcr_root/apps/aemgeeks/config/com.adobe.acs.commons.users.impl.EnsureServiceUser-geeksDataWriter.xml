@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    aces="[type=allow;privileges=jcr:read\,jcr:all\,rep:write\,jcr:versionManagement;path=/content/aemgeeks]"
+    ensure-immediately="{Boolean}true"
+    principalName="aemgeeks/geeks-data-writer"
+    type="add"/>

@@ -63,11 +63,11 @@
                         </repositoryStructurePackage>
                     </repositoryStructurePackages>
                     <embeddeds>
-                        <!--<embedded>
+                        <embedded>
                             <groupId>com.adobe.cq</groupId>
                             <artifactId>core.wcm.components.core</artifactId>
                             <target>/apps/aemgeeks/install</target>
-                        </embedded>-->
+                        </embedded>
                         <embedded>
                             <groupId>com.aem.geeks</groupId>
                             <artifactId>aemgeeks.core</artifactId>
@@ -76,16 +76,9 @@
                     </embeddeds>
                     <subPackages>
                     </subPackages>
-                    <!--<dependencies>
-                        <dependency>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.content</artifactId>
-                        </dependency>
-                        <dependency>
-                            <groupId>com.adobe.cq</groupId>
-                            <artifactId>core.wcm.components.config</artifactId>
-                        </dependency>
-                    </dependencies> -->
+                    <dependencies>
+
+                    </dependencies>                    
                 </configuration>
             </plugin>
             <plugin>
@@ -133,9 +126,6 @@
             <artifactId>aemgeeks.core</artifactId>
             <version>${project.version}</version>
         </dependency>
-
-
-
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.core</artifactId>
@@ -147,18 +137,6 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
-
-        <!--<dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.content</artifactId>
-            <type>zip</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.adobe.cq</groupId>
-            <artifactId>core.wcm.components.config</artifactId>
-            <type>zip</type>
-        </dependency>-->
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>uber-jar</artifactId>

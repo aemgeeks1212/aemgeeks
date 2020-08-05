@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-08-05T20:26:23.837+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/aemgeeks/templates/geeks-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Component Info"
+        sling:resourceType="aemgeeks/components/structure/content"/>
+</jcr:root>

@@ -43,6 +43,7 @@ public class HelloWorldModel {
 
     @OSGiService
     private SlingSettingsService settings;
+
     @SlingObject
     private Resource currentResource;
     @SlingObject

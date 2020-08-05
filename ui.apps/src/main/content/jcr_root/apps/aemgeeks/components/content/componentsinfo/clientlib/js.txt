@@ -1,0 +1,4 @@
+#base=js
+jquery.dataTables.js
+dataTables.bootstrap4.js
+datatables-demo.js
