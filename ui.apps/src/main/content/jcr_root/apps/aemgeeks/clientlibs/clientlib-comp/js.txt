@@ -14,9 +14,9 @@
 # limitations under the License.
 ###############################################################################
 
-#base=css
-bootstrap.css
-bootstrap-grid.css
-bootstrap-reboot.css
-all.css
-sb-admin-2.css
+#base=js
+#jquery.easing.js
+#sb-admin-2.js
+#Chart.js
+#chart-area-demo.js
+#chart-pie-demo.js
