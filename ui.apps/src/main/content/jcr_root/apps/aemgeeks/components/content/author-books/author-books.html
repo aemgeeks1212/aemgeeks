@@ -1,0 +1,45 @@
+<div data-sly-use.books="com.aem.geeks.core.models.AuthorBooks">
+    <h1>${books.authorName} Books</h1>
+    ===================Multifield with single field=============
+    <div data-sly-list.item="${books.authorBooks}">
+         ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item} </b></p>
+    </div>
+    <p> ALL Book : <b>${books.authorBooks @ join=', '}</b></p>
+
+    ========================== USING MAP ================================
+    <div data-sly-list.item="${books.bookDetailsWithMap}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookname} </b></p>
+        <p> Subject : <b>${item.booksubject}</b> </p>
+        <p> Publish : <b>${item.publishyear}</b> </p>
+    </div>
+
+
+    ========================== USING BEAN ================================
+    <div data-sly-list.item="${books.bookDetailsWithBean}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookName} </b></p>
+        <p> Date : <b>${'MMM dd,yyyy' @ format=item.publishDate}</b> </p>
+        <p> Copies : <b>${item.copies}</b> </p>
+    </div>
+
+
+
+    ================== USING NASTED MULTIFIELD ====================
+    <div data-sly-list="${books.bookDetailsWithNastedMultifield}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookName} </b></p>
+        <p> Subject : <b>${item.bookSubject} </b></p>
+        <div data-sly-list.editon="${item.bookEditons}">
+            <p> Book Editon : <b>${editon.bookEditon} </b></p>
+            <p> Published Date : <b>${'MMM dd,yyyy' @ format=editon.editonDate}</b> </p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
