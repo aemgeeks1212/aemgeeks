@@ -11,6 +11,14 @@
     
     <div>Books : ${author.books @ join=', '}</div>
 
+        ========================== USING MAP ================================
+    <div data-sly-list.item="${author.bookDetailsWithMap}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookname} </b></p>
+        <p> Subject : <b>${item.booksubject}</b> </p>
+        <p> Publish : <b>${item.publishyear}</b> </p>
+    </div>
+
 
 
 
