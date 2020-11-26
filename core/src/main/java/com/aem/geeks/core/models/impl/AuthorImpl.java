@@ -15,7 +15,6 @@ import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-
 import java.util.*;
 
 @Model(adaptables = SlingHttpServletRequest.class,
@@ -33,10 +32,10 @@ import java.util.*;
 @JsonRootName("author-details")
 public class AuthorImpl implements Author{
     private static final Logger LOG = LoggerFactory.getLogger(AuthorImpl.class);
-    static final String RESOURCE_TYPE="aemgeeks/components/content/author";
+    final protected static String RESOURCE_TYPE="aemgeeks/components/content/author";
 
     @Inject
-    Resource componentResource;
+    Resource resource;
 
     @SlingObject
     ResourceResolver resourceResolver;
@@ -48,7 +47,7 @@ public class AuthorImpl implements Author{
     private String reqAttribute;
 
     @ResourcePath(path="/content/aemgeeks/us/en/home")@Via("resource")
-    Resource resource;
+    Resource resourcePage;
 
     @ScriptVariable
     Page currentPage;
@@ -62,15 +61,15 @@ public class AuthorImpl implements Author{
     @Inject
     @Via("resource")
     @Default(values = "AEM")
-    String fname;
+    private String fname;
 
     @ValueMapValue
     @Default(values = "GEEKS")
-    String lname;
+    private String lname;
 
     @Inject
     @Via("resource")
-    boolean professor;
+    private boolean professor;
 
 
     @ValueMapValue
@@ -114,7 +113,7 @@ public class AuthorImpl implements Author{
 
     @Override
     public String getHomePageName(){
-        return resource.getName();
+        return resourcePage.getName();
     }
     @Override
     public String getLastModifiedBy(){
@@ -129,7 +128,7 @@ public class AuthorImpl implements Author{
     public List<Map<String, String>> getBookDetailsWithMap() {
         List<Map<String, String>> bookDetailsMap=new ArrayList<>();
         try {
-            Resource bookDetail=componentResource.getChild("bookdetailswithmap");
+            Resource bookDetail=resource.getChild("bookdetailswithmap");
             if(bookDetail!=null){
                 for (Resource book : bookDetail.getChildren()) {
                     Map<String,String> bookMap=new HashMap<>();
