@@ -1,0 +1,19 @@
+{
+  "currentPage": {
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Tue Oct 27 2020 22:11:34 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"Author Bio",
+      "cq:template":"/apps/aemgeeks/templates/geeks-content",
+      "cq:contextHubSegmentsPath":"/etc/segmentation/contexthub",
+      "jcr:created":"Tue Oct 27 2020 22:11:34 GMT+0530",
+      "cq:lastModified":"Mon Nov 02 2020 23:25:43 GMT+0530",
+      "sling:resourceType":"aemgeeks/components/structure/geeks-content",
+      "cq:contextHubPath":"/etc/cloudsettings/default/contexthub",
+      "cq:lastModifiedBy":"admin"
+    }
+  }
+}
