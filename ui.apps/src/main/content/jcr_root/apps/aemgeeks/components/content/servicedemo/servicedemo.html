@@ -1,0 +1,21 @@
+<h1>Service Demo</h1>
+<div data-sly-use.service="com.aem.geeks.core.models.ServiceDemo"></div>
+
+
+    ==================== USING Service and Iterator =======================
+    <div data-sly-list.item="${service.pagesList}">
+        <p> Page ${itemList.count} Title : <b>${item.title} </b></p>
+    </div>
+
+    ==================== USING Service and List =======================
+    <div data-sly-list.item="${service.pageTitleList}">
+        <p> Page ${itemList.count} Title : <b>${item} </b></p>
+    </div>
+
+
+
+
+
+
+
+
