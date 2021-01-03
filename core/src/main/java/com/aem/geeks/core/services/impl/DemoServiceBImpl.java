@@ -2,6 +2,7 @@ package com.aem.geeks.core.services.impl;
 
 import com.aem.geeks.core.services.DemoService;
 import com.aem.geeks.core.services.DemoServiceB;
+import com.aem.geeks.core.services.MultiService;
 import com.aem.geeks.core.utils.ResolverUtil;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
@@ -22,6 +23,16 @@ public class DemoServiceBImpl implements DemoServiceB {
     private static final Logger LOG= LoggerFactory.getLogger(DemoServiceBImpl.class);
 
 
+
+    /*--------Start Tutorial #30--------*/
+    @Reference(target = "(component.name=com.aem.geeks.core.services.impl.MultiServiceBImpl)")
+    MultiService multiService;
+
+    public String getNameWithReference(){
+        return "Response coming from  "+multiService.getName();
+    }
+    /*--------End Tutorial #30--------*/
+    /*--------Start Tutorial #29--------*/
     @Reference
     DemoService demoService;
 
@@ -40,5 +51,5 @@ public class DemoServiceBImpl implements DemoServiceB {
         }
         return null;
     }
-
+    /*--------End Tutorial #29--------*/
 }
