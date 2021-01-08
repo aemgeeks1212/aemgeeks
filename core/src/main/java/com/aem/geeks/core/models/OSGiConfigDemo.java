@@ -1,5 +1,9 @@
 package com.aem.geeks.core.models;
 
+import com.aem.geeks.core.services.OSGiFactoryConfig;
+
+import java.util.List;
+
 public interface OSGiConfigDemo {
     /*--------Start Tutorial #31--------*/
     public String getServiceName();
@@ -14,4 +18,8 @@ public interface OSGiConfigDemo {
     public String getServiceNameModule() ;
     public String getServiceURL() ;
     /*---------End Tutorial #32---------*/
+
+    /*--------Start Tutorial #33--------*/
+    public List<OSGiFactoryConfig> getAllOSGiConfigs();
+    /*---------End Tutorial #33---------*/
 }

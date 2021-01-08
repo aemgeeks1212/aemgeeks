@@ -4,15 +4,19 @@ import com.aem.geeks.core.models.OSGiConfigDemo;
 import com.aem.geeks.core.models.ServiceDemo;
 import com.aem.geeks.core.services.OSGiConfig;
 import com.aem.geeks.core.services.OSGiConfigModule;
+import com.aem.geeks.core.services.OSGiFactoryConfig;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 
+import java.util.List;
+
 @Model(adaptables = SlingHttpServletRequest.class,
         adapters = OSGiConfigDemo.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class OSGiConfigDemoImpl implements OSGiConfigDemo{
+
 
     /*--------Start Tutorial #31--------*/
     @OSGiService
@@ -61,4 +65,15 @@ public class OSGiConfigDemoImpl implements OSGiConfigDemo{
         return oSGiConfigModule.getServiceURL();
     }
     /*--------End Tutorial #32--------*/
+
+    /*--------Start Tutorial #33--------*/
+    @OSGiService
+    OSGiFactoryConfig oSGiFactoryConfig;
+
+    @Override
+    public List<OSGiFactoryConfig> getAllOSGiConfigs() {
+        return oSGiFactoryConfig.getAllConfigs();
+    }
+    /*--------End Tutorial #33--------*/
+
 }
