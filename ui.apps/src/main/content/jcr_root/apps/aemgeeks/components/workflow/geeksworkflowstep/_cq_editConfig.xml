@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:dialogMode="floating"
+    jcr:primaryType="cq:EditConfig">
+    <cq:formParameters
+        jcr:description="Geeks custom workflow step."
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Geeks Workflow Step"
+        PROCESS="com.aem.geeks.core.workflows.GeeksWorkflowStep"
+        PROCESS_AUTO_ADVANCE="true"/>
+    <cq:listeners
+        jcr:primaryType="cq:EditListenersConfig"
+        afterdelete="CQ.workflow.flow.Step.afterDelete"
+        afteredit="CQ.workflow.flow.Step.afterEdit"
+        afterinsert="CQ.workflow.flow.Step.afterInsert"
+        afterMove="REFRESH_PAGE"/>
+</jcr:root>
