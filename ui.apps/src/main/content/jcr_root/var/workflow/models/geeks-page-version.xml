@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}false"
+    jcr:primaryType="cq:WorkflowModel"
+    jcr:uuid="f217ea0f-1ac2-4ed2-868b-80d38fa5d52e"
+    sling:resourceType="cq/workflow/components/model"
+    description="No Description"
+    title="Geeks Page Version">
+    <metaData
+        cq:generatingPage="/conf/global/settings/workflow/models/geeks-page-version/jcr:content"
+        cq:lastModified="{Long}1615485871695"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"/>
+    <nodes jcr:primaryType="nt:unstructured">
+        <node0
+            jcr:primaryType="cq:WorkflowNode"
+            title="Start"
+            type="START">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node0>
+        <node1
+            jcr:primaryType="cq:WorkflowNode"
+            description="Add approver 1"
+            title="Add Approver 1"
+            type="PROCESS">
+            <metaData
+                jcr:primaryType="nt:unstructured"
+                PROCESS="com.aem.geeks.core.workflows.GeeksWorkflowStep"
+                PROCESS_ARGS="approver1:Sunil"
+                PROCESS_AUTO_ADVANCE="true"/>
+        </node1>
+        <node2
+            jcr:primaryType="cq:WorkflowNode"
+            description="A process to create a version for either a page or an asset."
+            title="Create  Page Version"
+            type="PROCESS">
+            <metaData
+                jcr:primaryType="nt:unstructured"
+                PROCESS="com.day.cq.wcm.workflow.process.CreateVersionProcess"
+                PROCESS_AUTO_ADVANCE="true"/>
+        </node2>
+        <node3
+            jcr:primaryType="cq:WorkflowNode"
+            description="Step to add approver."
+            title="Add Approver 1"
+            type="PROCESS">
+            <metaData
+                jcr:primaryType="nt:unstructured"
+                PROCESS="com.aem.geeks.core.workflows.GeeksWorkflowStep"
+                PROCESS_ARGS="approver2:GEEKS"
+                PROCESS_AUTO_ADVANCE="true"/>
+        </node3>
+        <node4
+            jcr:primaryType="cq:WorkflowNode"
+            title="End"
+            type="END">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node4>
+    </nodes>
+    <transitions jcr:primaryType="nt:unstructured">
+        <node0_x0023_node1
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node0"
+            rule=""
+            to="node1">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node0_x0023_node1>
+        <node1_x0023_node2
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node1"
+            rule=""
+            to="node2">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node1_x0023_node2>
+        <node2_x0023_node3
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node2"
+            rule=""
+            to="node3">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node2_x0023_node3>
+        <node3_x0023_node4
+            jcr:primaryType="cq:WorkflowTransition"
+            from="node3"
+            to="node4">
+            <metaData jcr:primaryType="nt:unstructured"/>
+        </node3_x0023_node4>
+    </transitions>
+</jcr:root>

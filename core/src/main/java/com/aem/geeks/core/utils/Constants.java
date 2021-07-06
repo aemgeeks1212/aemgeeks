@@ -26,6 +26,7 @@ public final class Constants {
      * Model constants
      */
     public static final String RESOURCE= "resource";
+    public static final String SLING_HTTP_SERVLET_REQUEST= "SlingHttpServletRequest";
     public  static final String LINK_LABEL_KEY = "label";
     public  static final String CTA_KEY = "cta";
     public  static final String URL_KEY = "url";

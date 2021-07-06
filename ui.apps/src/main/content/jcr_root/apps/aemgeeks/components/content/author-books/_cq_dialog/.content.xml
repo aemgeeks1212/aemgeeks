@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Author Books"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-author_editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <multifieldwithmap
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Multifield With Map"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <authorname
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Author Name"
+                                name="./authorname"/>
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                fieldLabel="Book Details">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <books
+                                        granite:class="foundation-toggleable cmp-teaser__editor-multifield_actions"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}false"
+                                        fieldLabel="Autor's Books">
+                                        <field
+                                            granite:class=""
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            name="./books"/>
+                                    </books>
+                                    <bookdetailswithmap
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Books Details"
+                                        fieldLabel="Book Details"
+                                        required="{Boolean}false">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            emptyText="Books Details"
+                                            name="./bookdetailswithmap">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <book
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Book Name"
+                                                    fieldLabel="Book Name"
+                                                    name="./bookname"/>
+                                                <subject
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Book Subject"
+                                                    fieldLabel="Book Subject"
+                                                    name="./booksubject"/>
+                                                <published
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Publish Year"
+                                                    fieldLabel="Publish Year"
+                                                    name="./publishyear"/>
+                                            </items>
+                                        </field>
+                                    </bookdetailswithmap>
+                                </items>
+                            </well>
+                        </items>
+                    </multifieldwithmap>
+                    <multifieldwithbean
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Multifield With Bean"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                fieldLabel="Book Details">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <bookdetailswithbean
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Books Details"
+                                        fieldLabel="Book Details"
+                                        required="{Boolean}false">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            emptyText="Books Details"
+                                            name="./bookdetailswithbean">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <bookname
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Book Name"
+                                                    fieldLabel="Book Name"
+                                                    name="./bookname"/>
+                                                <publishdate
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                    emptyText="Publish Date"
+                                                    fieldLabel="Publish Date"
+                                                    name="./publishdate"/>
+                                                <copies
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                    fieldDescription="This field contains copies published."
+                                                    fieldLabel="Published Copies"
+                                                    name="./copies"
+                                                    step="100"
+                                                    value="100"/>
+                                            </items>
+                                        </field>
+                                    </bookdetailswithbean>
+                                </items>
+                            </well>
+                        </items>
+                    </multifieldwithbean>
+                    <nastedmultifield
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Nasted Multifield"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                fieldLabel="Book Details">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <bookdetailswithnastedmultifield
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Books Details"
+                                        fieldLabel="Book Details"
+                                        required="{Boolean}false">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            emptyText="Books Details"
+                                            name="./bookdetailswithnastedmultifield">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <bookname
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Book Name"
+                                                    fieldLabel="Book Name"
+                                                    name="./bookname"/>
+                                                <booksubject
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Book Subject"
+                                                    fieldLabel="Book Subject"
+                                                    name="./booksubject"/>
+                                                <bookeditons
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldDescription="Book Editions detail."
+                                                    fieldLabel="Book Editions"
+                                                    required="{Boolean}false">
+                                                    <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        emptyText="Book Editions"
+                                                        name="./bookeditons">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <editiondate
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                                emptyText="Editon Date"
+                                                                fieldLabel="Editon Date"
+                                                                name="./editondate"/>
+                                                            <bookediton
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                                fieldDescription="This field contains book edition."
+                                                                fieldLabel="Book Edition"
+                                                                name="./bookediton"
+                                                                step="1"
+                                                                value="1"/>
+                                                        </items>
+                                                    </field>
+                                                </bookeditons>
+                                            </items>
+                                        </field>
+                                    </bookdetailswithnastedmultifield>
+                                </items>
+                            </well>
+                        </items>
+                    </nastedmultifield>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

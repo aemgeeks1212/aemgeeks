@@ -1,0 +1,39 @@
+{
+  "author": {
+    "jcr:lastModifiedBy":"admin",
+    "professor":"true",
+    "books":["JAVA","C#","DS","AEM"],
+    "fname":"AEM",
+    "lname":"GEEKS",
+    "bookdetailswithmap":{
+      "item0":{
+        "publishyear":"2000",
+        "booksubject":"Subject 1",
+        "bookname":"Book 1"
+      },
+      "item1":{
+        "publishyear":"2003",
+        "booksubject":"Subject 2",
+        "bookname":"Book 2"
+      }
+    }
+  },
+  "author-empty-books": {
+    "jcr:lastModifiedBy":"admin",
+    "professor":"true",
+    "fname":"AEM",
+    "lname":"GEEKS",
+    "bookdetailswithmap":{
+      "item0":{
+        "publishyear":"2000",
+        "booksubject":"Subject 1",
+        "bookname":"Book 1"
+      },
+      "item1":{
+        "publishyear":"2003",
+        "booksubject":"Subject 2",
+        "bookname":"Book 2"
+      }
+    }
+  }
+}

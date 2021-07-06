@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/libs/settings/wcm/designs/default"
+        cq:lastModified="{Date}2021-03-11T23:34:25.452+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Geeks Page Version"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <process_1920771335
+                jcr:created="{Date}2021-03-11T23:27:28.484+05:30"
+                jcr:createdBy="admin"
+                jcr:description="Add approver 1"
+                jcr:lastModified="{Date}2021-03-11T23:34:25.448+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Add Approver 1"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.aem.geeks.core.workflows.GeeksWorkflowStep"
+                    PROCESS_ARGS="approver1:Sunil"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_1920771335>
+            <createversionprocess
+                jcr:created="{Date}2021-03-06T12:45:50.467+05:30"
+                jcr:createdBy="admin"
+                jcr:description="A process to create a version for either a page or an asset."
+                jcr:lastModified="{Date}2021-03-06T12:46:18.746+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Create  Page Version"
+                sling:resourceType="wcm/workflow/components/workflow/createversionprocess">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.day.cq.wcm.workflow.process.CreateVersionProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </createversionprocess>
+            <process
+                jcr:created="{Date}2021-03-11T23:11:07.728+05:30"
+                jcr:createdBy="admin"
+                jcr:description="Step to add approver."
+                jcr:lastModified="{Date}2021-03-11T23:28:59.328+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Add Approver 1"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.aem.geeks.core.workflows.GeeksWorkflowStep"
+                    PROCESS_ARGS="approver2:GEEKS"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process>
+        </flow>
+    </jcr:content>
+</jcr:root>

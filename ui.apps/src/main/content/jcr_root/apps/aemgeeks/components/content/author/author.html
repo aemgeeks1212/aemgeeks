@@ -1,0 +1,25 @@
+<h1>Author Bio</h1>
+<div data-sly-use.author="${'com.aem.geeks.core.models.Author' @ rAttribute='TestAttribute'}"></div>
+
+    <div>First Name :  ${author.firstName} </div>
+    <div>Lasr Name :  ${author.lastName}   </div>
+    <div>Is Professor:  ${author.isProfessor}  </div>
+    <div>Page Title :  ${author.pageTitle}  </div>
+    <div>Request Attribute :  ${author.requestAttribute}  </div>
+    <div>Home Page Name :  ${author.homePageName}  </div>
+    <div>Modified By :  ${author.lastModifiedBy}  </div>
+    
+    <div>Books : ${author.books @ join=', '}</div>
+
+        ========================== USING MAP ================================
+    <div data-sly-list.item="${author.bookDetailsWithMap}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookname} </b></p>
+        <p> Subject : <b>${item.booksubject}</b> </p>
+        <p> Publish : <b>${item.publishyear}</b> </p>
+    </div>
+
+
+
+
+

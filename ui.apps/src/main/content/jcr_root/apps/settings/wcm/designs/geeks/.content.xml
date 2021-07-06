@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-20T15:17:11.670+01:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Geeks Design"
+        sling:resourceType="wcm/core/components/designer">
+        <model jcr:primaryType="nt:unstructured">
+            <flow
+                jcr:lastModified="{Date}2010-09-23T12:41:41.543+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Collaboration Workflow,group:DAM Workflow,group:Forms Workflow,group:Projects,group:WCM Workflow,group:Workflow,group:AEM GEEKS - Workflow]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </flow>
+        </model>
+        <clientcontextdesigner jcr:primaryType="nt:unstructured">
+            <stores
+                jcr:lastModified="{Date}2011-08-30T15:28:01.878+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Client Context">
+                <tagcloud
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/personalization/components/contextstores/tagcloud"
+                    store="tagcloud"/>
+                <resolvedsegments
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/personalization/components/contextstores/tagcloud"
+                    store="segments"/>
+                <activitystream
+                    jcr:primaryType="nt:unstructured"
+                    sling:resovurceType="cq/personalization/components/contextstores/activitystream"
+                    store="activitystream"/>
+                <geolocation
+                    jcr:lastModified="{Date}2011-09-13T15:27:16.333+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/personalization/components/contextstores/geolocation"
+                    properties="[city,region,country,country_code]"
+                    serviceURL="http://api.wipmania.com/jsonp?callback=${callback}"
+                    store="geolocation"/>
+            </stores>
+        </clientcontextdesigner>
+        <content jcr:primaryType="nt:unstructured">
+            <parsys
+                jcr:lastModified="{Date}2021-03-06T12:54:19.020+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"
+                components="group:AEM GEEKS - Content">
+                <section jcr:primaryType="nt:unstructured"/>
+            </parsys>
+        </content>
+        <home jcr:primaryType="nt:unstructured">
+            <parsys
+                jcr:lastModified="{Date}2021-03-18T18:50:36.781+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"
+                components="group:AEM GEEKS - Content">
+                <section jcr:primaryType="nt:unstructured"/>
+            </parsys>
+        </home>
+    </jcr:content>
+</jcr:root>
