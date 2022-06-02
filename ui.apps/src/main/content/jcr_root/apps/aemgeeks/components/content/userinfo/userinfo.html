@@ -1,0 +1,10 @@
+
+<sly data-sly-use.userinfo="com.aem.geeks.core.models.UserInfo"></sly>
+ <div class="user-info">
+    <h2> User ID   : ${userinfo.userId}</h2>
+    <h2> User Name : ${userinfo.userName}</h2>
+ </div>
+ <h3> ${userinfo.userName} is member of Groups:
+ <ul data-sly-list=${userinfo.userGroups}>
+  <li>${item}</li>
+ </ul>
