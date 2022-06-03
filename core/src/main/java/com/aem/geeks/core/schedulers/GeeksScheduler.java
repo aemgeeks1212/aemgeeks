@@ -29,22 +29,18 @@ public class GeeksScheduler implements Runnable {
         removeScheduler();
     }
 
-    private void removeScheduler() {
+    protected void removeScheduler() {
         scheduler.unschedule(String.valueOf(schedulerId));
     }
 
-    private void addScheduler(SchedulerConfiguration config) {
+    protected void addScheduler(SchedulerConfiguration config) {
         ScheduleOptions scheduleOptions = scheduler.EXPR(config.cronExpression());
         scheduleOptions.name(String.valueOf(schedulerId));
-        scheduleOptions.canRunConcurrently(true);
+        //scheduleOptions.canRunConcurrently(true);
         scheduler.schedule(this, scheduleOptions);
-
-        //LOG.info("\n ---------Scheduler added----------");
-        /*ScheduleOptions scheduleOptionsNow = scheduler.NOW(3,5);
-        scheduler.schedule(this, scheduleOptionsNow);*/
     }
    @Override
     public void run() {
-       // LOG.info("\n ====> RUN METHOD  ");
+       LOG.info("\n ====> RUN METHOD");
     }
 }
