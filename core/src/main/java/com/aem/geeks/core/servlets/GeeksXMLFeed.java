@@ -59,7 +59,8 @@ public class GeeksXMLFeed extends SlingAllMethodsServlet {
             DocumentBuilder documentBuilder = documentFactory.newDocumentBuilder();
             Document document = documentBuilder.newDocument();
 
-            ResourceResolver resourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
+            //ResourceResolver resourceResolver = ResolverUtil.newResolver(resourceResolverFactory);
+            final ResourceResolver resourceResolver = req.getResourceResolver();
             Page page = resourceResolver.adaptTo(PageManager.class).getPage("/content/aemgeeks/us/en");
             Iterator<Page> childPages = page.listChildren();
             Element root = document.createElement("allnews");
