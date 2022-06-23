@@ -3,7 +3,6 @@ package com.aem.geeks.core.models.impl;
 import com.adobe.granite.security.user.UserManagementService;
 import com.adobe.granite.security.user.UserProperties;
 import com.adobe.granite.security.user.UserPropertiesManager;
-import com.aem.geeks.core.models.HTLSightly;
 import com.aem.geeks.core.models.UserInfo;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
