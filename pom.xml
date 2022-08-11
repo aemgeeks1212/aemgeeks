@@ -43,7 +43,7 @@
         <sling.password>admin</sling.password>
         <vault.user>admin</vault.user>
         <vault.password>admin</vault.password>
-        <core.wcm.components.version>2.9.0</core.wcm.components.version>
+        <core.wcm.components.version>2.20.8</core.wcm.components.version>
         <com.adobe.acs.commons.version>4.7.2</com.adobe.acs.commons.version>
         
         <bnd.version>5.0.0</bnd.version>
