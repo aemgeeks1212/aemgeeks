@@ -1,0 +1,6 @@
+#base=js
+
+#showhide.js
+#showhidetabs.js
+#radioshowhidetabs.js
+checkboxshowhidetabs.js

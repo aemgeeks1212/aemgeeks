@@ -1,0 +1,4 @@
+.coral-Form--vertical .coral-Form-field.coral-Checkbox, .coral-Form--vertical .coral-Form-field.coral-Radio, .coral-Form--vertical .coral-Form-field.coral3-Checkbox, .coral-Form-field.coral3-Radio{
+
+display: inline flow-root list-item !important;
+}
