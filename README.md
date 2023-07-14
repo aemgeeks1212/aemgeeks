@@ -12,6 +12,7 @@ The main parts of the template are:
 * ui.tests: Java bundle containing JUnit tests that are executed server-side. This bundle is not to be deployed onto production.
 * ui.launcher: contains glue code that deploys the ui.tests bundle (and dependent bundles) to the server and triggers the remote JUnit execution
 * ui.frontend: an optional dedicated front-end build mechanism (Angular, React or general Webpack project)
+* test by Keehwan
 
 ## How to build
 
